@@ -1,13 +1,11 @@
-export function rockPaperScissors(choice, computerChoice) {
-    if (choice === computerChoice) {
-        return 0;
-    }
+export function getRandomThrow() {
+    let computerChoice = Math.floor(Math.random() * 3 + 1);
 
-    if (choice > computerChoice) {
-        return 1;
-    }
-
-    if (choice < computerChoice) {
-        return -1;
+    if (computerChoice === 1) {
+        return 'rock';
+    } else if (computerChoice === 2) {
+        return 'paper';
+    } else {
+        return 'scissors';
     }
 }

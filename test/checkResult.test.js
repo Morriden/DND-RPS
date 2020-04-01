@@ -1,46 +1,46 @@
 // IMPORT MODULES under test here:
-import { rockPaperScissors } from '../function.js/get-random-throw.js';
+import { checkResult } from '../function.js/checkResult.js';
 // import example from '../src/example.js';
 
 const test = QUnit.test;
 
-test('1, 1', function(assert) {
+test('paper, paper', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const choice = 1;
-    const computerChoice = 1;
-    const expected = 0;
+    const player = 'paper';
+    const computer = 'paper';
+    const expected = 'It was a draw!';
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = rockPaperScissors(choice, computerChoice);
+    const result = checkResult(player, computer);
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
 
-test('2, 1', function(assert) {
+test('paper, scissors', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const choice = 2;
-    const computerChoice = 1;
-    const expected = 1;
+    const player = 'paper';
+    const computer = 'scissors';
+    const expected = 'You lost!';
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = rockPaperScissors(choice, computerChoice);
+    const result = checkResult(player, computer);
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
 });
 
-test('0, 1', function(assert) {
+test('rock, scissors', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const choice = 0;
-    const computerChoice = 1;
-    const expected = -1;
+    const player = 'rock';
+    const computer = 'scissors';
+    const expected = 'You won!';
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = rockPaperScissors(choice, computerChoice);
+    const result = checkResult(player, computer);
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(expected, result);
