@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+input {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: solid 2px purple;
+}

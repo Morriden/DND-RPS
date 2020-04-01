@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Choose Your Class!</title>
 </head>
-
+<h1>Enter the Arena!</h1>
 <body>
-
+    <section class="section1">
+        <label> Warrior
+            <input name="class" type="radio" value="fighter" checked/>
+            <img src="warrior.jpg">
+        </label>
+        <label> Wizard
+            <input name="class" type="radio" value="wizard">
+            <img src="wizard.jpg">
+        </label>
+        <label> Rogue
+            <input name="class" type="radio" value="rogue">
+            <img src="rogue.jpg">
+        </label>
+    </section>
+    <div>
+        <button id="button-start"> Battle! </button>
+    </div>
+    <div id="battles-won">
+        Battles Won:
+    </div>
+    <div id="battles-fought">
+        Battles Lost: 
+    </div>
+    <div>
+        Battles Drawn:
+    </div>
+    <button id="button-reset"> Surrender... </button>
     <script type="module" src="app.js"></script>
 </body>
+<h4>The rules of the Arena are simple!</h4>
+<ul>
+    <li>Warrior beats rogue due to there armor.</li>
+    <li>Wizard beats warrior due to there magic.</li>
+    <li>Rogue beats wizard due to there stealth.</li>
+</ul>
 
 </html>
