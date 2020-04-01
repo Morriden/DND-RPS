@@ -12,15 +12,15 @@
 <body>
     <section class="section1">
         <label> Warrior
-            <input name="class" type="radio" value="fighter" checked/>
+            <input name="class" type="radio" value="Warrior" checked/>
             <img src="warrior.jpg">
         </label>
         <label> Wizard
-            <input name="class" type="radio" value="wizard">
+            <input name="class" type="radio" value="Wizard">
             <img src="wizard.jpg">
         </label>
         <label> Rogue
-            <input name="class" type="radio" value="rogue">
+            <input name="class" type="radio" value="Rogue">
             <img src="rogue.jpg">
         </label>
     </section>
@@ -35,8 +35,12 @@
     </div>
     <div>
         Battles Drawn: <span id="draws"></span>
+    </div> 
+    <div>
+        The latest result: <span id="results"></span>
     </div>
     <button id="button-reset"> Surrender... </button>
+
     <script type="module" src="app.js"></script>
 </body>
 <h4>The rules of the Arena are simple!</h4>

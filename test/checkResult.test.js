@@ -4,11 +4,11 @@ import { checkResult } from '../function.js/checkResult.js';
 
 const test = QUnit.test;
 
-test('paper, paper', function(assert) {
+test('Wizard, Wizard', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const player = 'paper';
-    const computer = 'paper';
+    const player = 'Wizard';
+    const computer = 'Wizard';
     const expected = 'It was a draw!';
     //Act 
     // Call the function you're testing and set the result to a const
@@ -18,11 +18,11 @@ test('paper, paper', function(assert) {
     assert.equal(expected, result);
 });
 
-test('paper, scissors', function(assert) {
+test('Wizard, Rogue', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const player = 'paper';
-    const computer = 'scissors';
+    const player = 'Wizard';
+    const computer = 'Rogue';
     const expected = 'You lost!';
     //Act 
     // Call the function you're testing and set the result to a const
@@ -32,11 +32,11 @@ test('paper, scissors', function(assert) {
     assert.equal(expected, result);
 });
 
-test('rock, scissors', function(assert) {
+test('rock, Rogue', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const player = 'rock';
-    const computer = 'scissors';
+    const computer = 'Rogue';
     const expected = 'You won!';
     //Act 
     // Call the function you're testing and set the result to a const
