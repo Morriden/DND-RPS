@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("arena.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(212, 226, 241);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+input {
+    display: none;
+}
+
+input[type=radio]:checked + img {
+    border: solid 4px purple;
+}
+
+h1 {
+    color: rgb(218, 154, 18);
+}
+
+.section1 {
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+}
