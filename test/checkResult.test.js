@@ -32,10 +32,10 @@ test('Wizard, Rogue', function(assert) {
     assert.equal(expected, result);
 });
 
-test('rock, Rogue', function(assert) {
+test('Warrior, Rogue', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const player = 'rock';
+    const player = 'Warrior';
     const computer = 'Rogue';
     const expected = 'You won!';
     //Act 
