@@ -18,6 +18,14 @@ const updateSpans = () => {
     drawsSpan.textContent = battlesDrawn;
 };
 
+const totalReset = () => {
+    battlesWon = 0;
+    battlesLost = 0;
+    battlesDrawn = 0;
+    lastResultSpan.textContent = '';
+    updateSpans();
+};
+
 const arenaBattle = () => {
     //grab values
     const selectedRadioButton = document.querySelector('input:checked');
@@ -37,17 +45,12 @@ const arenaBattle = () => {
     if (results === 'It was a draw!') {
         battlesDrawn++;
     }
+
     lastResultSpan.textContent = 'Your opponent was a ' + computerChoice + ' ' + results;
     updateSpans();
 };
 
-
-
-
-
-
-
-
-
 buttonStart.addEventListener('click', arenaBattle);
+
+buttonReset.addEventListener('click', totalReset);
 

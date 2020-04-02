@@ -1,5 +1,4 @@
 export function checkResult(player, computer) {
-    console.log(player, computer);
     //if (player === 'Warrior' && computer === 'Wizard')
     if (player === 'Warrior' && computer === 'Wizard') {
         return 'You lost!';
