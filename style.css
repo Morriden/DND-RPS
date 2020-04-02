@@ -26,3 +26,11 @@ input[type=radio]:checked + img {
 h1 {
     color: rgb(218, 154, 18);
 }
+
+.section1 {
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+}
