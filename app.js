@@ -7,22 +7,28 @@ const winsSpan = document.getElementById('wins');
 const lossSpan = document.getElementById('loss');
 const drawsSpan = document.getElementById('draws');
 const lastResultSpan = document.getElementById('results');
+const givenUpSpan = document.getElementById('given-up');
 
 let battlesWon = 0;
 let battlesLost = 0;
 let battlesDrawn = 0;
+let givenUp = 0;
 
 const updateSpans = () => {
     winsSpan.textContent = battlesWon;
     lossSpan.textContent = battlesLost;
     drawsSpan.textContent = battlesDrawn;
+    givenUpSpan.textContent = givenUp;
 };
+
+givenUpSpan.textContent = givenUp;
 
 const totalReset = () => {
     battlesWon = 0;
     battlesLost = 0;
     battlesDrawn = 0;
     lastResultSpan.textContent = '';
+    givenUp++;
     updateSpans();
 };
 
