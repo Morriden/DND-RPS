@@ -1,4 +1,4 @@
-import { checkResult } from '../functions/checkResult.js';
+import { checkResult } from './functions/checkResult.js';
 import { getRandomThrow } from './functions/get-random-throw.js';
 
 const buttonStart = document.getElementById('button-start');
