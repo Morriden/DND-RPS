@@ -1,5 +1,5 @@
-import { checkResult } from '../function.js/checkResult.js';
-import { getRandomThrow } from './function.js/get-random-throw.js';
+import { checkResult } from '../functions/checkResult.js';
+import { getRandomThrow } from './functions/get-random-throw.js';
 
 const buttonStart = document.getElementById('button-start');
 const buttonReset = document.getElementById('button-reset');
